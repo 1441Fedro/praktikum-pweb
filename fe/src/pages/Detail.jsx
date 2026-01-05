@@ -12,8 +12,7 @@ function Detail() {
 
     useEffect(() => {
         if (id) {
-            setIsLoading(true);
-            // Menggunakan read_by_id.php dengan format URL path
+            // setIsLoading(true);
             axios.get(`http://localhost/pweb/pta-25-26/be/read_by_id.php/${id}`)
                 .then(response => {
                     console.log('Detail response:', response.data);

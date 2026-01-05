@@ -94,7 +94,7 @@ function Table({
             {/* Server-Side Search Bar dengan Tombol Search */}
             <div className="mb-6 px-2">
                 <div className="max-w-md mx-auto">
-                    <div className="flex gap-2"> {/* Menambahkan Flex untuk tombol */}
+                    <div className="flex gap-2">
                         <div className="relative grow">
                             <input
                                 type="text"
@@ -151,7 +151,6 @@ function Table({
                         </p>
                         {data.length > 0 ? (
                             <table className="w-full border-collapse border-4 border-[#9b7653] shadow-lg">
-                                {/* ... <thead> dan <tbody> Anda sudah benar ... */}
                                 <thead>
                                     <tr>
                                         {columns.map((col, i) => <th key={i} className="border border-[#9b7653] p-2 bg-[#2e4034] text-white">{col}</th>)}
